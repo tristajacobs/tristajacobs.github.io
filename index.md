@@ -57,7 +57,7 @@ This artifact processes course data using C++. Enhancements included replacing i
 ## Artifact Three  
 ### Databases (CS 340)
 
-This artifact connects to a database and performs CRUD operations. Enhancements included improved input validation, better error handling, cleanup of repeated SQL statements, and corrected connection handling. These changes made the project more secure, reliable, and maintainable.
+This artifact connects to a database and performs CRUD operations. Enhancements included improved input validation, better error handling, cleanup of repeated MongoDB operations, logging for auditing, and defensive programming. These changes made the project more secure, reliable, and maintainable.
 
 - **Original Artifact:**  
   [CS-340-main.zip](CS-340-main.zip)
@@ -76,9 +76,9 @@ Across the artifacts, I applied secure coding practices including:
 
 - Input validation to prevent malformed or malicious data  
 - Error handling that avoids exposing sensitive information  
-- Parameterized queries and safer SQL structure  
-- Proper connection handling to prevent leaks or unintended access  
-- Replacement of inefficient or unsafe data structures  
+- Logging for auditing and debugging  
+- Defensive programming to prevent crashes  
+- Safe database operations  
 - Clear documentation supporting secure design decisions  
 
 These improvements demonstrate a security mindset and align with industry best practices for safe and reliable software.
