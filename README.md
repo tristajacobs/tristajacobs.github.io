@@ -1,99 +1,61 @@
-# CS 499 ePortfolio  
-**Trista Jacobs**  
-**Instructor: Dr. Kraya**  
-**CS-499 Computer Science Capstone**
+# CS-340 Project Two – Grazioso Salvare Dashboard  
+**Student:** Trista Jacobs
 
-Welcome to my Computer Science Capstone ePortfolio. This site presents the original artifacts, enhanced artifacts, narratives, code review, and reflections demonstrating my growth across software engineering, algorithms and data structures, and database development.
+## Overview
+This dashboard was created to support Grazioso Salvare in identifying dogs suitable for specialized rescue training. It connects to a MongoDB database through a custom CRUD module and displays animal data in an interactive dashboard. The table, chart, and map all update automatically based on the selected rescue filter.
 
----
+## Features
+- **Interactive Filters**
+  - Water Rescue
+  - Mountain or Wilderness Rescue
+  - Disaster or Individual Tracking
+  - Reset (full dataset)
+- **Dynamic Components**
+  - Data table with full animal details
+  - Pie chart showing breed distribution
+  - Map showing the selected animal’s location
+- **Branding**
+  - Grazioso Salvare logo
+  - “Dashboard by Trista Jacobs” header
 
-## Professional Self Assessment
+## Screenshot Summary
+Screenshots demonstrate dashboard functionality and rubric alignment. Each screenshot shows a different filter state and confirms that the dashboard updates correctly.
 
-This ePortfolio shows the work I completed in CS 499 and how I improved three artifacts from earlier courses. I focused on software design and engineering, algorithms and data structures, and databases. I reviewed my old work, found problems, and made each project better. This helped me understand my strengths and weaknesses and showed how much I have grown as a computer science student.
+1. **Reset Filter**  
+   - Full dataset displayed  
+   - Breed distribution chart shows all breeds  
+   - Map centered  
+   - Filename: `Reset.png`
 
----
+2. **Water Rescue Filter**  
+   - Displays water‑rescue‑qualified breeds  
+   - Chart shows 100% Labrador Retriever Mix  
+   - Filename: `Water Rescue.png`
 
-## Code Review
+3. **Mountain Rescue Filter**  
+   - Displays Husky, Rottweiler, Malamute, etc.  
+   - Chart and map update accordingly  
+   - Filename: `Mountain or Wilderness Rescue.png`
 
-For Milestone One, I completed a written code review because I could not record a video. I explained what each artifact was, what issues I found, and what I planned to improve during the course.
+4. **Disaster Tracking Filter**  
+   - Displays Bloodhound, German Shepherd, Golden Retriever, etc.  
+   - Chart and map reflect filtered results  
+   - Filename: `Disaster or Individual Tracking.png`
 
-- **Code Review Document:**  
-  [2-2 Milestone One_ Code Review.docx](2-2%20Milestone%20One_%20Code%20Review.docx)
+5. **Branding Screenshot**  
+   - Logo and student name visible  
+   - Included in one or more screenshots
 
----
+## How to Run
+1. Open `ProjectTwoDashboard.ipynb` in JupyterLab.
+2. Ensure MongoDB is running (no authentication required).
+3. Run all cells from top to bottom.
+4. The dashboard will launch in a new tab with full interactivity.
 
-## Artifact One  
-### Software Design and Engineering (CS 320)
+## Challenges
+A key challenge was ensuring that all dashboard components updated together when filters were applied. Initially, the table, chart, and map did not stay synchronized. This was resolved by linking the radio input to each callback function so all components shared the same filtered dataset.
 
-This artifact is a Java-based contact management application originally developed in CS 320. Enhancements included improved structure, removal of repeated code, stronger input validation, expanded unit tests, and better error handling. These changes made the project more maintainable and professional.
-
-- **Original Artifact:**  
-  [CS-320-main.zip](CS-320-main.zip)
-
-- **Enhanced Artifact:**  
-  [CS-320-enhanced.zip](CS-320-enhanced.zip)
-
-- **Enhancement Narrative:**  
-  [3-2 Milestone Two_ Enhancement One_ Software Design and Engineering.docx](3-2%20Milestone%20Two_%20Enhancement%20One_%20Software%20Design%20and%20Engineering.docx)
-
----
-
-## Artifact Two  
-### Algorithms and Data Structures (CS 300)
-
-This artifact processes course data using C++. Enhancements included replacing inefficient linear searches with faster data structures, adding time complexity explanations, improving documentation, and adding input validation. These changes made the program faster, clearer, and more robust.
-
-- **Original Artifact:**  
-  [CS-300-main.zip](CS-300-main.zip)
-
-- **Enhanced Artifact:**  
-  [CS-300-enhanced.zip](CS-300-enhanced.zip)
-
-- **Enhancement Narrative:**  
-  [4-2 Milestone Three_ Enhancement Two_ Algorithms and Data Structure.docx](4-2%20Milestone%20Three_%20Enhancement%20Two_%20Algorithms%20and%20Data%20Structure.docx)
-
----
-
-## Artifact Three  
-### Databases (CS 340)
-
-This artifact connects to a database and performs CRUD operations. Enhancements included improved input validation, better error handling, cleanup of repeated SQL statements, and corrected connection handling. These changes made the project more secure, reliable, and maintainable.
-
-- **Original Artifact:**  
-  [CS-340-main.zip](CS-340-main.zip)
-
-- **Enhanced Artifact:**  
-  [CS-340-enhanced.zip](CS-340-enhanced.zip)
-
-- **Enhancement Narrative:**  
-  [5-2 Milestone Four_ Enhancement Three_ Databases.docx](5-2%20Milestone%20Four_%20Enhancement%20Three_%20Databases.docx)
-
----
-
-## Security Enhancements
-
-Across the artifacts, I applied secure coding practices including:
-
-- Input validation to prevent malformed or malicious data  
-- Error handling that avoids exposing sensitive information  
-- Parameterized queries and safer SQL structure  
-- Proper connection handling to prevent leaks or unintended access  
-- Replacement of inefficient or unsafe data structures  
-- Clear documentation supporting secure design decisions  
-
-These improvements demonstrate a security mindset and align with industry best practices for safe and reliable software.
-
----
-
-## Repository Contents
-
-This repository includes:
-
-- Original artifacts (CS‑300, CS‑320, CS‑340)  
-- Enhanced artifacts for all three categories  
-- Enhancement narratives  
-- Code review  
-- Professional self-assessment  
-- This ePortfolio page  
-
-All materials are accessible for verification of the completed work.
+## Notes
+- The CRUD module (`CRUD_Python_Module.py`) handles all database operations.
+- MongoDB access is open in this environment; no login is required.
+- All filters and visuals were validated using the screenshots listed above.
